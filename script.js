@@ -10,4 +10,10 @@ const menuMobile = document.querySelector('.menu-mobile');
         }
     }
 
+const efeitoMenuDesktop = document.querySelector('.header')
+
+window.addEventListener('scroll', function() {
+    efeitoMenuDesktop.classList.toggle('rolagem', this.window.scrollY > 0);
+})
+
     

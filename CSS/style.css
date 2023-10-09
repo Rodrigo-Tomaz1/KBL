@@ -1,12 +1,47 @@
 @import url('./header/header.css');
+@import url('./main/main.css');
+@import url('./footer/footer.css');
 
+:root {
+    --cor-ligth: white;
+
+    /* Cores header */
+    --color-header-background: rgba(25, 25, 25, .4);
+    --color-header: white;
+
+    /*Cores Footer */
+
+    --color-footer-background: #494646;
+    --color-footer-border: #8f8b8b;
+    /* Icone Instagram */
+    --color-instagram-1: #7f37c9;
+    --color-instagram-2: #ff2992;
+    --color-instagram-3: #ff9807;
+
+    /* Icone Youtube */
+    --color-youtube-1: #ff0000 ;
+    --color-youtube-2: #da3939;
+    /* Icone Facebook */
+    
+    --color-facebook-1: #0d2cdc;
+    --color-facebook-2: #1d0cd8;
+    --color-facebook-3: #2540d6;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
 
-    background-image: url('./Images/primeira-img.jpg') no-repeat;
-
     font-family: 'Inclusive Sans', sans-serif;
 }
 
+.banner {
+    height: 100vh;
+    background-image: url('https://scontent.fplu4-1.fna.fbcdn.net/v/t1.6435-9/72046328_739727246454858_5881918593309868032_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=UzT7ckRlREsAX-c6apD&_nc_ht=scontent.fplu4-1.fna&oh=00_AfBTJ86KaVW0aIoweV0sm43wkayVl_IgzLFAlZwSwCzD7g&oe=654A70DB');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
