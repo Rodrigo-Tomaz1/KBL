@@ -23,10 +23,8 @@ header {
     background: var(--color-header-background) fixed;
 }
 .logo-menu {
-
     border-right: 2px solid #ccc;
-    
-}
+}   
 
 .logo-menu .img-logo {
     height: 60px;
