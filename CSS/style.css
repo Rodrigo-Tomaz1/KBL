@@ -33,13 +33,18 @@
     box-sizing: 0;
 
     font-family: 'Inclusive Sans', sans-serif;
-}
 
+}
+html {
+    transition: .6s;
+    scroll-behavior: smooth;
+}
 .banner {
     height: 100vh;
     background-image: url('https://scontent.fplu4-1.fna.fbcdn.net/v/t1.6435-9/72046328_739727246454858_5881918593309868032_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=UzT7ckRlREsAX-c6apD&_nc_ht=scontent.fplu4-1.fna&oh=00_AfBTJ86KaVW0aIoweV0sm43wkayVl_IgzLFAlZwSwCzD7g&oe=654A70DB');
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 
     display: flex;
     align-items: center;
