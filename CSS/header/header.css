@@ -1,205 +1,155 @@
-@import url('./header-mobile/header-mobile.css');
-
 header {
     width: 100%;
     height: 70px;
     position: fixed;
-    
+
+}
+.rolagem {
+    background-color: var(--color-black-light);
 }
 
-.Menu-descktop {
+/* Header-Content */
+.header-content {
+    width: 100%;
+    height: 100%;
+    
+    background-color: var(--color-header-background);
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-left: 50%;
-    transform: translateX(-40%);
-    width: 100%;
-    height: 100%;
-
-    
 }
-.header.rolagem {
-    background: var(--color-header-background) fixed;
-}
-.logo-menu {
-    border-right: 2px solid #ccc;
-}   
-
-.logo-menu .img-logo {
-    height: 60px;
-    width: 110px;
-    opacity: .7;
-    transition: .3s;
-}
-.logo-menu .img-logo:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.content-menu {
-
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.content-menu ul {
-    list-style-type: none;
-
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-}
-.content-menu ul .li-content a {
-    text-decoration: none;
-}
-
-.content-menu ul .li-content .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
-    gap: 10px;
-
-    color: white;
-    font-size: 20px;
-    transition: .6s;
-}
-
-.content-menu ul #home {
-    width: 90px;
-    height: 100%;
-    display: flex;
-    gap: 5px;
-    border-radius: 10px;
-    background: #ccc;
-}
-.content-menu ul .li-content .content:hover {
-    color: rgb(59, 74, 74);
-    cursor: pointer;
-}
-.redes-sociais{
-    height: 60px;
-    border-left: 2px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.redes-sociais ul {
-    list-style: none;
-    display: flex; 
-    gap: 40px;
-    margin-left: 10px;
-}
-.redes-sociais ul .li-redes-sociais {
-    text-decoration: none;
-    font-size: 25px;
-    opacity: .7;
-    transition: .4s;
-
-}
-.redes-sociais ul .li-redes-sociais:hover{
-    transform: translateY(-5px);
-    opacity: 1;
-}
-.redes-sociais ul .li-redes-sociais a {
-    color: white;
-}
-
-/*Menu Mobile Reponsivo*/
-.btn-sidebar {
-    display: none;
-}
-.menu-mobile {
-    display: none;
-}
-
-@media screen and (max-width:1100px) {
-    header {
-        width: 100%;
-        height: 70px;
-        position: fixed;
-        
-    }
-    .menu-mobile {
-        width: 100%;
-        height: 70px;
-    }
-    .logo-menu {
-        margin-left: 30px;
-        
-    }
-    .logo-menu .img-logo {
-        height: 60px;
-        width: 110px;
-        opacity: .7;
-    }
-
-    .content-menu {
-        display: none;
-    }
-
-    .redes-sociais {
-        display: none;
-    }
-    .btn-sidebar{
-        display: block;
-        margin-right: 90px;
-    }
-
-    .btn-sidebar {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .btn-sidebar .icon {
-        width: 30px;
-    }
-    
-    .menu-mobile.ativo {
-        display: block;
-        display: flex;
-        justify-content: right;
-        margin: 0;
-        transition: .8s;
-
-    }
-    .menu-mobile ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        height: 300px;
-        background: #ccc;
-        border-bottom: 2px solid #8a6c6c;
-        border-bottom-left-radius: 10px;
-
-        
-    }
-    .menu-mobile ul .li-content-mobile a {
-        text-decoration: none;
-        color: var(--color-white);
-    } 
-    .menu-mobile ul .li-content-mobile {
-        
-        width: 100%;
+    /*  Logo */
+    .header-content .logo {
+        width: 25%;
         height: 100%;
+
         display: flex;
         align-items: center;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-        
+        justify-content: center;
     }
-    .menu-mobile ul .li-content-mobile:hover {
-        background: #635858;
-        border-bottom-left-radius: 10px;
+
+    .header-content .logo img {
+        width: 110px;
+        height: 60px;
     }
-    .ativo {
-        display: block;
+
+    /* End Logo */
+
+    /* Navigation-Header */
+    .navigation-header {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-left: 1px solid var(--color-white-light);
+        border-right: 1px solid var(--color-white-light);
     }
+
+        .navigation-header ul {
+            width: 100%;
+            height: 100%;
+
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 120px;
+        }
+
+        /* HOME */
+        .navigation-header ul .li-header-content-home {
+            padding: 15px 20px;
+            border-radius: 15px;
+            background-color:  var(--color-white-light);
+
+        }
+        .navigation-header ul .li-header-content-home a {
+            text-decoration: none;
+            font-size: 20px;
+            color: var(--color-white);
+
+            transition: .6s;
+        }
+        .navigation-header ul .li-header-content-home a:hover {
+            color: var(--color-black-light);
+        }
+        /* End HOME */
+
+        /* li-header-content // Sobre and Novidades */
+
+        .navigation-header ul .li-header-content {
+            font-size: 20px;
+        }
+        .navigation-header ul .li-header-content a {
+            text-decoration: none;
+            color: var(--color-white);
+            
+            transition: .6s;
+        }
+        .navigation-header ul .li-header-content a:hover {
+
+            color: var(--color-black-light);
+            
+        }
+
+        /* End  li-header-content // Sobre and Novidades */
+
+    /* End Navigation-Header */
+
+/* End Header-Content*/
+
+/* Social-Networks */
+
+.social-networks {
+    width: 25%;
+    height: 100%;
 }
+    /* Social-Networks // Instagram, Youtube and Facebook */
+    .social-networks ul {
+        width: 100%;
+        height: 100%;
+
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 60px;
+
+    }
+    .social-networks ul .li-social-network {
+        font-size: 25px;
+        transition: .5s;
+
+    }
+    .social-networks ul .li-social-network:hover {
+        transform: translateY(-5px);
+    }
+
+    .social-networks ul .li-social-network a {
+        color: var(--color-white);
+        opacity: .6;
+        transition: .6s;
+    }
+    .social-networks ul .li-social-network a:hover {
+        opacity: 1;
+    }
+    /* End Social-Networks // Instagram, Youtube and Facebook */
+
+/* End Social-Networks*/
+
+/* Display's None // Mobile */
+
+.btn-Sidebar {
+    display: none;    
+}
+.header-content-mobile {
+    display: none;
+}
+

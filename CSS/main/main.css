@@ -1,5 +1,5 @@
 main {
     height: 200vh;
-    background-color: var(--color-header-background);
-
+    transition: .6s;
+    scroll-behavior: smooth;
 }
