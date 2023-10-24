@@ -16,4 +16,3 @@ function expandir() {
 // window.addEventListener('scroll', function() {
 //     efeitoMenuDesktop.classList.toggle('rolagem', this.window.scrollY > 0);
 // })
-

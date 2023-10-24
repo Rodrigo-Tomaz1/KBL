@@ -1,133 +1,118 @@
 footer {
     width: 100%;
-    height: 400px;
-    background: var(--color-footer-background);
-}
+    height: 300px;
+    background-color: var(--color-black-light2);
+    color: var(--color-white);
 
-.footer-content {
+}
+footer h1{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+footer .footer-content{
     display: flex;
-    justify-content: space-around;
-
+   
     width: 100%;
-    height: 350px;
+    height: 250px;
 }
-.footer-redes-sociais {
+
+footer .footer-content .footer-redes-sociais{
+    width: 45%;
     height: 100%;
-    width: 50%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+    margin-top: 2rem;
+    gap: 80px;
     
 }
-.footer-redes-sociais .title {
-    width: 100%;
-    height: 50%;
-
+footer .footer-content .footer-redes-sociais .midias-sociais{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-white);
+    gap: 40px;
+    
 }
-
-.logo-footer {
-    width: 110px;
-    height: 60px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.midias-sociais {
-    width: 100%;
-    height: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
-}
-.midias-sociais a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+footer .footer-content .footer-redes-sociais .midias-sociais a{
     font-size: 20px;
-
+    padding: 10px;
     border-radius: 50%;
-    padding: 15px;
-    color: var(--color-white);
+    background-color: var(--color-white-light);
+    color: var(--color-black-light2);
+    opacity: .5;
+    transition: .6s;
+    cursor: pointer;
 }
-.midias-instagram {
-    background: linear-gradient(var(--color-instagram-1),var(--color-instagram-2),var(--color-instagram-3));
+footer .footer-content .footer-redes-sociais .midias-sociais a:hover{
+    opacity: 1;
 }
-.midias-youtube {
-    background: linear-gradient(var(--color-youtube-1), var(--color-youtube-2));
-}
-.midias-facebook {
-    background: linear-gradient(var(--color-facebook-1), var(--color-facebook-2), var(--color-facebook-3));
-}
-.lateral-border {
-    width: 1px;
-    height: 80%;
-    background: var(--color-footer-border);
-    border: 1px solid var(--color-footer-border);
-    margin-top: 175px ;
-    transform: translateY(-50%);
-}
-
-.footer-contacts {
-    height: 100%;
+footer .footer-content .footer-contacts{
     width: 50%;
+    height: 100%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    
-    color: var(--color-white);
+    flex-direction: column;
 
+}
+footer .footer-content .footer-contacts .footer-contacts-content{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 2rem;
+    
     gap: 30px;
 }
-.footer-contacts .footer-contacts-content {
-    width: 100%;
+footer .footer-content .footer-container-studes{
+    width: 45%;
     height: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
-    gap: 60px;
+    margin-top: 2rem;
+    gap: 30px;
+
+    
+}
+footer .footer-content .footer-container-studes ul{
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    color: white;
+    
+}
+footer .footer-content .footer-container-studes ul li{
+    list-style: none;
 }
 
-.footer-copy-right{
+
+footer .footer-content .footer-container-studes ul li a{
+    text-decoration: none;
+    color: var(--color-white-light);
+    cursor: pointer;
+}
+footer .footer-content .footer-container-studes ul li a:hover{
+    color: var(--color-white);
+}
+footer .footer-content .footer-container-studes ul li a p::before {
+    content: url(./icon-list-footer/list-style-footer.png);
+    margin-right: 10px;
+}
+
+footer .footer-copy-right{
     width: 100%;
-    height: 50px;
+    height: 49px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    border-top: 1px solid #8f8b8b;
-
-    color: var(--color-white);
-} 
-/* Resposifidade Footer*/
-
-@media screen and (max-width: 819px) {
-    /* Footer */
-
-    footer {
-        width: 100%;
-        height: 500px;
-        background-color: var(--color-footer-background);
-    }
-        /* Footer-Content */
-
-        /* End Footer-Content */
-    /* End Footer */
+    border-top: 1px solid var(--color-white-light);
 }

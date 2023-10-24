@@ -1,0 +1,110 @@
+@media screen and (max-width: 1185px) and (min-width: 343px){
+    footer {
+        width: 100%;
+        height: 550px;
+
+        background-color: var(--color-black-light2);
+        color: var(--color-white);
+    }
+    footer h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 500px;
+        width: 100%;
+    }
+    footer .footer-content .footer-redes-sociais{
+        margin-top: 0;
+    
+    }
+    footer .footer-content .footer-redes-sociais,
+    footer .footer-content .footer-contacts
+    {
+        width: 80%;
+        height: 100%;
+        border-bottom: 1px solid var(--color-white-light);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-content .footer-redes-sociais .title,
+    footer .footer-content .footer-redes-sociais .midias-sociais{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-content .footer-redes-sociais .midias-sociais{
+        display: flex;
+        gap: 30px;
+    }
+    footer .footer-content .footer-redes-sociais .midias-sociais a{
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 50%;
+
+        opacity: .7;
+        transition: .7s;
+        background-color: var(--color-white);
+        color: var(--color-white-light);
+        font-size: 20px;
+    }
+    footer .footer-content .footer-contacts .footer-contacts-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 0;
+    }
+    footer .footer-content .footer-container-studes{
+        width: 80%;
+        height: 100%;
+    }
+    footer .footer-content .footer-container-studes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+
+        margin-top: 0;
+    }
+    footer .footer-content .footer-container-studes ul{
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+    footer .footer-content .footer-container-studes ul li{
+        list-style: none;
+        display: flex;
+    }
+    footer .footer-content .footer-container-studes ul li a{
+        text-decoration: none;
+        color: var(--color-white-light);
+    }
+    
+    
+    footer .footer-copy-right{
+        width: 100%;
+        height: 49px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        border-top: 1px solid var(--color-white-light);
+    }
+}
+
